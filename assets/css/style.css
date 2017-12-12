@@ -1,0 +1,18 @@
+#modal1 {
+  z-index: 1000000;
+}
+
+#close:hover {
+  cursor: pointer;
+}
+
+#phone {
+  font-size: 12px;
+  margin-left: 45px;
+  margin-bottom: -10px;
+  color:rgb(167, 167, 167);
+}
+
+#phone-input {
+  margin-top: -5px;
+}

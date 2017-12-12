@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contacts</title>
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="materialize/js/jquery.js" charset="utf-8"></script>
+</head>
+<body>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+          <i class="material-icons right" id="close">close</i>
+      <h4>Contactos</h4>
+
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col offset-s2 s4">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate" placeholder="Nombre">
+        </div>
+        <div class="input-field col s4" id="phone-input">
+          <p id="phone">Teléfono:</p>
+          <i class="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" class="validate" placeholder="10 dígitos">
+        </div>
+      </div>
+    </form>
+
+    </div>
+    <div class="row">
+      <a href="#!" class=" col offset-s2 s2 modal-action modal-close waves-effect waves-green btn-flat left" id="addContact">Agregar</a>
+    </div>
+  </div>
+
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Lista de contactos</a>
+      <div class="row">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a id="addModal" class="waves-effect waves-light btn  modal-trigger" href="#modal1"><i class="material-icons">add</i></a></li>
+        <li><div class="input-field col s12">
+          <i class="material-icons prefix">search</i>
+          <input id="icon_search" type="text" class="validate" placeholder="Buscar contacto">
+        </div>
+        </li>
+        <li><a href="collapsible.html">JQuery</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <div class="container" id="contacts">
+
+    </div>
+
+
+<script src="assets/js/app.js" charset="utf-8"></script>
+</body>
+</html>
